@@ -102,32 +102,32 @@
             }
 
             var initialText = localStorage.getItem('text') || `
-            # Hello, Welcome To My WebSite!!!
-            ### Abraham Ferguson, Software Developer
-            ___
-            [Click Here To View My Resume](https://docs.google.com/document/d/1bqzBbETxhOW3gUdFJTNZT4aNmjmbXrcLlfE26E9WYDA/edit?usp=sharing)
+# Hello, Welcome To My WebSite!!!
+### Abraham Ferguson, Software Developer
+___
+[Click Here To View My Resume](https://docs.google.com/document/d/1bqzBbETxhOW3gUdFJTNZT4aNmjmbXrcLlfE26E9WYDA/edit?usp=sharing)
 
-            #### Here Are Some Of My Open Source Contributions:
-            <img id="LG-logo" src="http://learncapital.com/wp-content/uploads/2017/07/Learners-Guild.png">
-              - __Learning Operating System__
-                - A professional collective for aspiring web developers. We work collaboratively with the guidance and mentorship of senior engineers on web applications to develop as software engineers, including contributions to open source projects.
-                - __Technologies Used__: React/Redux, GraphQL, RethinkDB
-                - [LearnersGuild/echo](https://github.com/LearnersGuild/echo/pull/1029)
-                  -  Informs Member That Their Phase has Changed
-                - [LearnersGuild/echo](https://github.com/LearnersGuild/echo/pull/1046)
-                  - Notifies Moderator Of Incorrect Action Through Slack API
-                - [LearnersGuild/echo](https://github.com/LearnersGuild/game/pull/878)
-                  - Added Filtered Data Tab To Display Coaches
-              - __Prrr__
-                - Prrr was a unique tool that put a hard focus on everyone reviewing each others code such that all the varied concept implementation from the assortment of selected projects was able to circulate and be shared and considered by everyone.
-                - [LearnersGuild/Prrr](https://github.com/LearnersGuild/prrr/pull/76)
-                  - Allows the logged in user to see new pull-requests that are in need of review.
-            ___
-            #### Cool Little Game:
-            - __React BlackJack__
-            <img id="blackjack-logo" src="https://af-portfolio.herokuapp.com/img/portfolio/my-blackjack-start-screen.png">
-            [Repository](https://github.com/abrahamfergie/myBlackjack) | [Play-Me](https://af-blackjack.herokuapp.com)
-            ___`;
+#### Here Are Some Of My Open Source Contributions:
+<img id="LG-logo" src="http://learncapital.com/wp-content/uploads/2017/07/Learners-Guild.png">
+  - __Learning Operating System__
+    - A professional collective for aspiring web developers. We work collaboratively with the guidance and mentorship of senior engineers on web applications to develop as software engineers, including contributions to open source projects.
+    - __Technologies Used__: React/Redux, GraphQL, RethinkDB
+    - [LearnersGuild/echo](https://github.com/LearnersGuild/echo/pull/1029)
+      -  Informs Member That Their Phase has Changed
+    - [LearnersGuild/echo](https://github.com/LearnersGuild/echo/pull/1046)
+      - Notifies Moderator Of Incorrect Action Through Slack API
+    - [LearnersGuild/echo](https://github.com/LearnersGuild/game/pull/878)
+      - Added Filtered Data Tab To Display Coaches
+  - __Prrr__
+    - Prrr was a unique tool that put a hard focus on everyone reviewing each others code such that all the varied concept implementation from the assortment of selected projects was able to circulate and be shared and considered by everyone.
+    - [LearnersGuild/Prrr](https://github.com/LearnersGuild/prrr/pull/76)
+      - Allows the logged in user to see new pull-requests that are in need of review.
+___
+#### Cool Little Game:
+- __React BlackJack__
+<img id="blackjack-logo" src="https://af-portfolio.herokuapp.com/img/portfolio/my-blackjack-start-screen.png">
+[Repository](https://github.com/abrahamfergie/myBlackjack) | [Play-Me](https://af-blackjack.herokuapp.com)
+___`;
             input.value = initialText;
             output.innerHTML = marked(initialText);
         </script>
