@@ -67,5 +67,8 @@ grammarly-btn {
 @media (min-width: 768px){
     #blackjack-logo {
         height: 17em;
-    }                            
+    }
+    h1 {
+        height: 100em;
+    }
 }
