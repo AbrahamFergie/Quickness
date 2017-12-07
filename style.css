@@ -30,7 +30,7 @@ body > :not(script) {
 }
 
 #blackjack-logo {
-    height: 17em;
+    height: 13em;
 }
 
 #out {
@@ -64,8 +64,8 @@ grammarly-ghost {
 grammarly-btn {
     display: none;
 }
-@media screen (max-width: 762px){
+@media screen (min-width: 762px){
     #blackjack-logo{
-        height: 13em;
+        height: 17em;
     }                            
 }
