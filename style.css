@@ -64,8 +64,8 @@ grammarly-ghost {
 grammarly-btn {
     display: none;
 }
-@media screen (min-width: 762px){
-    #blackjack-logo{
+@media (min-width: 768px){
+    #blackjack-logo {
         height: 17em;
     }                            
 }
