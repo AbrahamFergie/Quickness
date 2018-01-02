@@ -114,11 +114,11 @@
                     localStorage.setItem('text', event.target.value);
                 }, 300);
             }
-
+            var windowViewText = window.outerWidth > 600 ? "To Your Right" : "Below"
             var initialText = localStorage.getItem('text') || `
 # Welcome!!!
 ### Abraham Ferguson, Software Developer
-##### This Site Is Written Completeley In Markdown Code That You San See To Your Right Or If You Are On A Mobile Device It Will Be Below
+##### This Site Is Written Completeley In Markdown Code That You San See ${windowViewText}
 ___
 [Click Here To View My Resume](https://docs.google.com/document/d/1bqzBbETxhOW3gUdFJTNZT4aNmjmbXrcLlfE26E9WYDA/edit?usp=sharing)
 
