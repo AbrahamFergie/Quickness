@@ -144,6 +144,13 @@ ___
 ![blackjack-logo](https://af-portfolio.herokuapp.com/img/portfolio/my-blackjack-start-screen.png)
 [Repository](https://github.com/abrahamfergie/myBlackjack) | [Play-Me](https://af-blackjack.herokuapp.com)
 ___`;
+            var content = document.getElementById("content");
+            var links = content.getElementsByTagName("a");
+            links.map((link) => {
+               if (link.hostname != window.location.hostname) {
+                  link.target = '_blank';
+               } 
+            })
             input.value = initialText;
             output.innerHTML = marked(initialText);
             console.log("Hello, I see you there, feel free to peruse as you please.")
