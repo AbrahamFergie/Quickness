@@ -146,11 +146,11 @@ ___
 ___`;
             var content = document.getElementById("content");
             var links = document.getElementsByTagName("a");
-            links.map((link) => {
-               if (link.hostname != window.location.hostname) {
-                  link.target = '_blank';
+            for(let i = 0; i < links.length; i++){
+               if (links[i].hostname != window.location.hostname) {
+                  links[i].target = '_blank';
                } 
-            })
+            }
             input.value = initialText;
             output.innerHTML = marked(initialText);
             console.log("Hello, I see you there, feel free to peruse as you please.")
