@@ -147,6 +147,7 @@ ___`;
             var content = document.getElementById("content");
             var links = document.getElementsByTagName("a");
             for(let i = 0; i < links.length; i++){
+                console.log(links[i])
                if (links[i].hostname != window.location.hostname) {
                   links[i].target = '_blank';
                } 
