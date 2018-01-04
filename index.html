@@ -147,8 +147,7 @@ ___`;
             input.value = initialText;
             output.innerHTML = marked(initialText);
             var links = document.getElementsByTagName("a");
-            for(let i = 0; i < links.length; i++){
-                console.log(links[i])
+            for(let i = 0; i < links.length; i++){                
                if (links[i].hostname != window.location.hostname) {
                   links[i].target = '_blank';
                } 
