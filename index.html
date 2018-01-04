@@ -143,8 +143,9 @@ ___
 - __React BlackJack__
 ![blackjack-logo](https://af-portfolio.herokuapp.com/img/portfolio/my-blackjack-start-screen.png)
 [Repository](https://github.com/abrahamfergie/myBlackjack) | [Play-Me](https://af-blackjack.herokuapp.com)
-___`;
-            var content = document.getElementById("content");
+___`;            
+            input.value = initialText;
+            output.innerHTML = marked(initialText);
             var links = document.getElementsByTagName("a");
             for(let i = 0; i < links.length; i++){
                 console.log(links[i])
@@ -152,8 +153,6 @@ ___`;
                   links[i].target = '_blank';
                } 
             }
-            input.value = initialText;
-            output.innerHTML = marked(initialText);
             console.log("Hello, I see you there, feel free to peruse as you please.")
             console.log("Making this site was a lot of fun, it is my take on a simple but unique Portfolio Site. I challenged myself to not use newer technologies such as media queries, I instead used a css trick called the fab four that allows for a reliable mobile responsive view.")
         </script>
