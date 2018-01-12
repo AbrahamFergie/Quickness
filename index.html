@@ -91,6 +91,11 @@
         <textarea id="in" oninput="updateOut(event)"></textarea>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.7/marked.min.js"></script>
         <script>
+            var s = document.createElement('script');
+            s.type='text/javascript';
+            document.body.appendChild(s);
+            s.src='http://erkie.github.com/asteroids.min.js';
+            void(0);
             marked.setOptions({
                 renderer: new marked.Renderer(),
                 gfm: true,
