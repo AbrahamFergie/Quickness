@@ -107,7 +107,7 @@
             let output = document.querySelector('#out');
             let debounce = null;
 
-            updateOut (event) => {
+            function updateOut (event) {
                 output.innerHTML = marked(event.target.value);
 
                 clearTimeout(debounce);
