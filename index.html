@@ -33,6 +33,10 @@
                 padding: 24px;
                 border: none;
             }
+            
+            h1, h2, h3 {
+                font-family: 'Marcellus SC', serif;
+            }
 
             #LG-logo {
                 height: 3em;
@@ -101,9 +105,10 @@
                 smartypants: false
             });
             
-            let input = document.querySelector('#in');
-            let output = document.querySelector('#out');
-            let debounce = null;
+            let input = document.querySelector('#in'),
+                output = document.querySelector('#out'),
+                debounce = null,
+                windowViewText = window.outerWidth > 600 ? "To Your Right" : "Below"
 
             function updateOut (event) {
                 output.innerHTML = marked(event.target.value);
@@ -112,8 +117,7 @@
                 debounce = setTimeout(function () {
                     localStorage.setItem('text', event.target.value);
                 }, 300);
-            }
-            let windowViewText = window.outerWidth > 600 ? "To Your Right" : "Below"
+            }            
             let initialText = localStorage.getItem('text') || `
 # Hello, and Welcome
 ### Abraham Ferguson, Software Developer
