@@ -102,11 +102,11 @@
                 smartypants: false
             });
             
-            var input = document.querySelector('#in');
-            var output = document.querySelector('#out');
-            var debounce = null;
+            let input = document.querySelector('#in');
+            let output = document.querySelector('#out');
+            let debounce = null;
 
-            function updateOut (event) {
+            updateOut (event) => {
                 output.innerHTML = marked(event.target.value);
 
                 clearTimeout(debounce);
@@ -114,8 +114,8 @@
                     localStorage.setItem('text', event.target.value);
                 }, 300);
             }
-            var windowViewText = window.outerWidth > 600 ? "To Your Right" : "Below"
-            var initialText = localStorage.getItem('text') || `
+            let windowViewText = window.outerWidth > 600 ? "To Your Right" : "Below"
+            let initialText = localStorage.getItem('text') || `
 # Hello, and Welcome
 ### Abraham Ferguson, Software Developer
 ##### This Site Is Written Completeley In Markdown Code That You Can See ${windowViewText}
@@ -146,7 +146,7 @@ ___
 ___`;            
             input.value = initialText;
             output.innerHTML = marked(initialText);
-            var links = document.getElementsByTagName("a");
+            let links = document.getElementsByTagName("a");
             for(let i = 0; i < links.length; i++){                
                if (links[i].hostname != window.location.hostname) {
                   links[i].target = '_blank';
